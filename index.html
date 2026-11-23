@@ -10,7 +10,8 @@
 <meta property="og:image" content="images/hero.jpg">
 <!--
   ▣ 수정 안내 (GitHub 웹 화면에서 파일만 올리면 됩니다)
-  - 글자: 이 파일에서 [대괄호] 와 KAKAO_URL 을 찾아 실제 정보로 바꿔주세요. (GitHub에서 연필 아이콘으로 수정)
+  - 아직 채울 곳: KAKAO_URL(카카오톡 채널 링크), [인스타그램 링크]·[@계정], [네이버 지도 링크]
+    이 파일에서 찾아 실제 값으로 바꿔주세요. (GitHub에서 연필 아이콘으로 수정)
   - 사진: 아래 이름 그대로 올리면 자동으로 바뀝니다. 같은 이름으로 다시 올리면 교체돼요.
       images/hero.jpg          첫 화면 사진
       images/class-1.jpg       어린이 클래스 사진
@@ -104,12 +105,6 @@
   .steps b{display:block;font-weight:600;margin-bottom:4px}
   .steps span{font-size:13px;color:var(--mute);line-height:1.65;display:block}
 
-  /* ---------- 후기 ---------- */
-  .quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:32px;border-top:1px solid var(--ink);padding-top:22px}
-  .quotes p{line-height:1.9;margin-bottom:14px}
-  .quotes footer{font-size:13px;color:var(--mute)}
-  .quotes em{font-style:normal;border:1px solid var(--line);padding:0 6px;margin-left:6px;font-size:11.5px}
-
   /* ---------- FAQ ---------- */
   .faq{display:grid;grid-template-columns:1fr 1.6fr;gap:32px}
   .faq .qs{border-top:1px solid var(--ink)}
@@ -142,7 +137,7 @@
     .hero .pic{height:66vh}
     .hero .intro{padding:36px 28px 0}
     section{padding-top:84px}
-    .classes,.quotes{grid-template-columns:1fr;gap:40px}
+    .classes{grid-template-columns:1fr;gap:40px}
     .faq,.visit{grid-template-columns:1fr}
     .grid{grid-template-columns:repeat(2,1fr)}
     .grid figure:nth-child(1){grid-column:span 2;grid-row:auto;aspect-ratio:16/11}
@@ -272,29 +267,17 @@
     </div>
   </section>
 
-  <!-- 후기 -->
-  <section>
-    <div class="wrap">
-      <span class="label">다녀가신 분들의 이야기 (예시 문구 — 실제 후기로 바꿔주세요)</span>
-      <div class="quotes">
-        <blockquote><p>아이가 자기가 만든 비누라며 매일 손을 씻겠다고 해요. 아이 눈높이에서 차분하게 알려주셔서 처음인데도 끝까지 즐겁게 했어요.</p><footer>초등학생 학부모<em>예시</em></footer></blockquote>
-        <blockquote><p>워크숍 프로그램으로 출장 클래스를 진행했는데 반응이 정말 좋았습니다. 준비부터 정리까지 다 챙겨주셔서 담당자로서 편했어요.</p><footer>기업 인사팀 담당자<em>예시</em></footer></blockquote>
-        <blockquote><p>명절 선물로 로고 각인 비누를 주문했어요. 포장까지 깔끔해서 거래처에서 어디서 했냐고 물어보시더라고요.</p><footer>주문제작 고객<em>예시</em></footer></blockquote>
-      </div>
-    </div>
-  </section>
-
   <!-- FAQ -->
   <section id="faq">
     <div class="wrap faq">
       <div><span class="label">자주 묻는 질문</span><h2>궁금한 점</h2><p class="lead">더 궁금한 점은 카카오톡으로 편하게 물어봐 주세요.</p></div>
       <div class="qs">
-        <details><summary>몇 살부터 클래스에 참여할 수 있나요?</summary><p>[6]세부터 참여할 수 있어요. 미취학 아동은 보호자가 함께 참여해 주시면 좋아요.</p></details>
-        <details><summary>최소 몇 명부터 클래스가 가능한가요?</summary><p>어린이 클래스는 1명부터, 기업 체험 클래스는 [10]명 이상부터 진행해요. 인원이 적을 때는 상담으로 맞춰 드려요.</p></details>
+        <details><summary>몇 살부터 클래스에 참여할 수 있나요?</summary><p>6세부터 참여할 수 있어요. 미취학 아동은 보호자가 함께 참여해 주시면 좋아요.</p></details>
+        <details><summary>최소 몇 명부터 클래스가 가능한가요?</summary><p>어린이 클래스는 1명부터, 기업 체험 클래스는 10명 이상부터 진행해요. 인원이 적을 때는 상담으로 맞춰 드려요.</p></details>
         <details><summary>회사나 행사장으로 출장도 오시나요?</summary><p>네, 출장 클래스를 진행합니다. 지역과 인원에 따라 출장비가 추가될 수 있으니 문의 시 장소를 함께 알려주세요.</p></details>
-        <details><summary>주문제작은 얼마나 걸리나요?</summary><p>수제비누는 숙성 기간이 필요해서 보통 [2~3]주가 걸려요. 명절·연말에는 한 달 전쯤 미리 문의해 주세요.</p></details>
+        <details><summary>주문제작은 얼마나 걸리나요?</summary><p>수제비누는 숙성 기간이 필요해서 보통 2~3주가 걸려요. 명절·연말에는 한 달 전쯤 미리 문의해 주세요.</p></details>
         <details><summary>피부가 예민한데 사용해도 괜찮을까요?</summary><p>제품마다 사용한 재료를 안내해 드려요. 처음 쓰실 때는 팔 안쪽 등 작은 부위에 먼저 써 보시길 권해요.</p></details>
-        <details><summary>주차할 수 있나요?</summary><p>[주차 안내 문구를 입력해 주세요]</p></details>
+        <details><summary>주차할 수 있나요?</summary><p>공방 앞 길가에 잠깐 세울 수 있어요.</p></details>
       </div>
     </div>
   </section>
@@ -307,9 +290,7 @@
         <h2>공방에 놀러 오세요</h2>
         <p class="lead">클래스는 예약제로 운영해요. 방문 전 미리 연락 주세요.</p>
         <dl class="info">
-          <dt>주소</dt><dd>[주소]</dd>
-          <dt>운영 시간</dt><dd>[화~토 10:00~18:00]</dd>
-          <dt>전화</dt><dd><a href="tel:[전화번호]">[전화번호]</a></dd>
+          <dt>운영 시간</dt><dd>화~토 10:00~18:00</dd>
           <dt>인스타그램</dt><dd><a href="[인스타그램 링크]" target="_blank" rel="noopener">[@계정]</a></dd>
         </dl>
         <div class="btns">
@@ -325,13 +306,12 @@
 
 <footer class="site">
   <div class="wrap">
-    <span>봄날비누공방 | 대표 [이름] | 사업자등록번호 [000-00-00000]</span>
     <span>© 봄날비누공방</span>
+    <span>전자책 실습용 가상 공방입니다</span>
   </div>
 </footer>
 
 <nav class="dock" aria-label="빠른 문의">
-  <a class="btn" href="tel:[전화번호]">전화하기</a>
   <a class="btn solid" href="KAKAO_URL" target="_blank" rel="noopener">카카오톡 문의</a>
 </nav>
 
