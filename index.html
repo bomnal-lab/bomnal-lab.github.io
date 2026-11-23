@@ -58,6 +58,8 @@
   .brand{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px}
   .nav{display:flex;gap:26px;list-style:none;font-size:13px;color:var(--mute)}
   .nav a:hover{color:var(--ink)}
+  .top-actions{display:flex;align-items:center;gap:14px;margin-left:28px}
+  .top-actions .btn{height:32px;padding:0 14px}
   .menu-btn{display:none;background:none;border:0;font:inherit;font-size:13px;cursor:pointer;color:var(--ink)}
 
   /* ---------- 첫 화면 ---------- */
@@ -130,6 +132,7 @@
   @media(max-width:860px){
     .nav{display:none}
     .menu-btn{display:block}
+    .top-actions .btn{display:none}
     .top.open .nav{display:flex;flex-direction:column;gap:0;position:absolute;top:60px;left:0;right:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 28px 18px;font-size:16px;color:var(--ink)}
     .top.open .nav a{display:block;padding:8px 0}
     .hero{grid-template-columns:1fr;height:auto;min-height:0}
@@ -162,7 +165,10 @@
       <li><a href="#faq">자주 묻는 질문</a></li>
       <li><a href="#visit">오시는 길</a></li>
     </ul>
-    <button class="menu-btn" id="menu-btn" aria-expanded="false">메뉴</button>
+    <div class="top-actions">
+      <a class="btn solid" href="https://docs.google.com/forms/d/e/1FAIpQLSeSChrROLZu42LTeecLLK6ydFJctVk_70wjHfucuG_juGuivQ/viewform" target="_blank" rel="noopener">예약하기</a>
+      <button class="menu-btn" id="menu-btn" aria-expanded="false">메뉴</button>
+    </div>
   </div>
 </header>
 
@@ -174,8 +180,8 @@
       <h1>햇살 드는 작은 공방에서<br>비누를 만들어요</h1>
       <p>천연 재료로 만드는 수제비누 공방입니다. 아이와 함께, 동료와 함께, 마음을 전하는 선물로 비누를 만들어요.</p>
       <div class="btns">
-        <a class="btn solid" href="#classes">세 가지 수업 보기</a>
-        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeSChrROLZu42LTeecLLK6ydFJctVk_70wjHfucuG_juGuivQ/viewform" target="_blank" rel="noopener">문의하기</a>
+        <a class="btn solid" href="https://docs.google.com/forms/d/e/1FAIpQLSeSChrROLZu42LTeecLLK6ydFJctVk_70wjHfucuG_juGuivQ/viewform" target="_blank" rel="noopener">예약하기</a>
+        <a class="btn" href="#classes">세 가지 수업 보기</a>
       </div>
     </div>
   </div>
@@ -198,7 +204,7 @@
             <dt>인원</dt><dd>1~8명</dd>
             <dt>가격</dt><dd>1인 30,000원</dd>
           </dl>
-          <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeSChrROLZu42LTeecLLK6ydFJctVk_70wjHfucuG_juGuivQ/viewform" target="_blank" rel="noopener">예약 문의</a>
+          <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeSChrROLZu42LTeecLLK6ydFJctVk_70wjHfucuG_juGuivQ/viewform" target="_blank" rel="noopener">예약하기</a>
         </article>
         <article id="class-2">
           <div class="pic" data-src="images/class-2.jpg" role="img" aria-label="기업 체험 클래스 풍경"></div>
@@ -258,7 +264,7 @@
       <span class="label">진행 과정</span>
       <h2>이렇게 진행돼요</h2>
       <ol class="steps">
-        <li><b>문의</b><span>문의하기 버튼을 눌러 원하는 날짜와 인원을 남겨주세요</span></li>
+        <li><b>신청</b><span>예약하기 버튼을 눌러 원하는 날짜와 인원을 남겨주세요</span></li>
         <li><b>상담</b><span>대상과 목적에 맞는 구성과 견적을 안내드려요</span></li>
         <li><b>일정 확정</b><span>날짜, 장소, 수량을 확정하고 예약을 마무리해요</span></li>
         <li><b>진행·제작</b><span>클래스를 진행하거나 주문 비누를 만들어요</span></li>
@@ -288,14 +294,14 @@
       <div>
         <span class="label">오시는 길</span>
         <h2>공방에 놀러 오세요</h2>
-        <p class="lead">클래스는 예약제로 운영해요. 방문 전 문의하기로 먼저 예약해 주세요.</p>
+        <p class="lead">클래스는 예약제로 운영해요. 방문 전 예약하기로 먼저 신청해 주세요. 신청하신 시간은 확인 후 확정 안내를 드려요.</p>
         <dl class="info">
           <dt>운영 시간</dt><dd>화~토 10:00~18:00</dd>
           <!-- 인스타그램 계정이 생기면 아래 줄의 주석 표시를 지우고 아이디를 넣으세요 (DM 바로가기: https://ig.me/m/아이디)
           <dt>인스타그램</dt><dd><a href="https://ig.me/m/아이디" target="_blank" rel="noopener">@아이디</a></dd> -->
         </dl>
         <div class="btns">
-          <a class="btn solid" href="https://docs.google.com/forms/d/e/1FAIpQLSeSChrROLZu42LTeecLLK6ydFJctVk_70wjHfucuG_juGuivQ/viewform" target="_blank" rel="noopener">문의하기</a>
+          <a class="btn solid" href="https://docs.google.com/forms/d/e/1FAIpQLSeSChrROLZu42LTeecLLK6ydFJctVk_70wjHfucuG_juGuivQ/viewform" target="_blank" rel="noopener">예약·문의하기</a>
         </div>
       </div>
     </div>
@@ -310,7 +316,7 @@
 </footer>
 
 <nav class="dock" aria-label="빠른 문의">
-  <a class="btn solid" href="https://docs.google.com/forms/d/e/1FAIpQLSeSChrROLZu42LTeecLLK6ydFJctVk_70wjHfucuG_juGuivQ/viewform" target="_blank" rel="noopener">문의하기</a>
+  <a class="btn solid" href="https://docs.google.com/forms/d/e/1FAIpQLSeSChrROLZu42LTeecLLK6ydFJctVk_70wjHfucuG_juGuivQ/viewform" target="_blank" rel="noopener">예약·문의하기</a>
 </nav>
 
 <script>
