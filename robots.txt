@@ -3,4 +3,4 @@ Allow: /
 
 Sitemap: https://bomnal-lab.github.io/sitemap.xml
 
-# 다음 웹마스터도구 인증 코드는 이 아래 줄에 붙여넣으세요.
+#DaumWebMasterTool:6fba8c8f0d59a7e116067de7b8965f88026debc90cf0666d3333bf3d19daa12d:upewRfgI5y6IkdBZlCoHBQ==
