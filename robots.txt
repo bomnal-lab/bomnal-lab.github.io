@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bomnal-lab.github.io/sitemap.xml
+
+# 다음 웹마스터도구 인증 코드는 이 아래 줄에 붙여넣으세요.
